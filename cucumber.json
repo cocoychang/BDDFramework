@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-03T08:25:28.177Z",
+        "line": 3,
+        "name": "Validate user able to login",
+        "description": "",
+        "id": "logged-user-new;validate-user-able-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4550594800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigate to login page",
+            "match": {
+              "location": "stepDefinitions.HomePage.user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195238800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User successfully enters login credentials",
+            "match": {
+              "location": "stepDefinitions.LoginPage.user_successfully_enters_login_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30025600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User able to view the dashboard",
+            "match": {
+              "location": "stepDefinitions.LoginPage.user_able_to_view_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Logged user new",
+    "description": "",
+    "id": "logged-user-new",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]

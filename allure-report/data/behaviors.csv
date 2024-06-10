@@ -1,0 +1,3 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","user is locked","Validate the locked user","0","0","1","0","0"
+"","Logged user new","Validate user able to login","0","0","1","0","0"
