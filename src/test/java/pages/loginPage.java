@@ -1,18 +1,17 @@
 package pages;
 
 
-import io.qameta.allure.Allure;
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utility.BaseDriver;
 
-import java.io.File;
-import java.io.IOException;
 
 public class loginPage extends BaseDriver {
+
+
 
 
     public loginPage(WebDriver driver) {
@@ -33,11 +32,13 @@ public class loginPage extends BaseDriver {
     public WebElement errorMessage;
 
 
-    public void Login_credetials(String username, String password) throws InterruptedException, IOException {
+    public void Login_credetials(String username, String password){
         username_field.sendKeys(username);
         password_field.sendKeys(password);
         LoginButton.click();
     }
+
+
 
 
 }
