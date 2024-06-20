@@ -1,4 +1,4 @@
-pipeline {
+pipeline{
     agent any
     stages {
         stage('maven install') {
@@ -10,5 +10,4 @@ withMaven(globalMavenSettingsConfig: '', jdk: '', maven: 'Maven1', mavenSettings
         }
 
     }
-
 }
