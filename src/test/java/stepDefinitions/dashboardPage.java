@@ -5,6 +5,8 @@ import io.cucumber.java.en.When;
 import pages.DashboardPage;
 import utility.BaseDriver;
 
+import java.io.IOException;
+
 public class dashboardPage extends BaseDriver {
 
     @When("User click the add to cart of desire item")
@@ -14,9 +16,9 @@ public class dashboardPage extends BaseDriver {
     }
 
     @Then("It will display the remove button and will display the one item in the cart")
-    public void itWillDisplayTheRemoveButtonAndWillDisplayTheOneItemInTheCart() {
+    public void itWillDisplayTheRemoveButtonAndWillDisplayTheOneItemInTheCart() throws IOException, InterruptedException {
         DashboardPage objDashBoard =  new DashboardPage(driver);
-        objDashBoard.shoppingCartisContainOrder("1");
+        assertTrue(objDashBoard.shoppingCartisContainOrder("1"),"Order count is displayed","Order count is not displayed");
         driver.quit();
     }
 }
